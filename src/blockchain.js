@@ -138,7 +138,7 @@ class Blockchain {
             let currentTime = parseInt(new Date().getTime().toString().slice(0, -3));
 
             //Check if the time elapsed is less than 5 minutes
-            const fiveMinInSeconds = 100 * 60;
+            const fiveMinInSeconds = 5 * 60;
             if (currentTime - msgTime < fiveMinInSeconds) {
                 if (bitcoinMessage.verify(message, address, signature)) {
 
