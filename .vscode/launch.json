@@ -8,7 +8,13 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
-            "program": "${workspaceFolder}/app.js"
+            "program": "${workspaceFolder}/app.js",
+            //"console": "integratedTerminal",
+            //"protocol": "inspector",
+            //"env": {
+            //    "DEBUG":"app:*",
+            //    "NODE_ENV": "development"
+            //}
         }
     ]
 }
